@@ -115,7 +115,7 @@ class OkCubotSpider(Spider):
             else:
                 log.msg('User queue is too big. Skipping.')
                 return False
-        
+
         log.msg('User is already in queue. Skipping.')
         return False
 
@@ -137,7 +137,7 @@ class OkCubotSpider(Spider):
             # We only want to scrape this user
             yield Request(self.base_url + '/profile/' + self.target, callback=self.parse_profile)
         else:
-            profiles = selector.css('#similar_users_list li > a::attr(href), .match > a::attr(href)').extract()
+            profiles = selector.css('#similar_users_list li > a::attr(href), #matchphotobrowser_int .item > a::attr(href)').extract()
             if len(profiles) == 0:
                 log.msg('Credentials incorrect.', level=log.ERROR)
             else:
@@ -337,7 +337,7 @@ class OkCubotSpider(Spider):
         request = Request(self.base_url + '/profile/' + user['d_username'] + '/questions', callback=self.parse_questions, priority=400)
         request.meta['user'] = user
         yield request
-    
+
     def parse_questions(self, response):
         selector = Selector(response)
 
