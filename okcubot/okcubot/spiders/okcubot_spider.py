@@ -137,7 +137,7 @@ class OkCubotSpider(Spider):
             # We only want to scrape this user
             yield Request(self.base_url + '/profile/' + self.target, callback=self.parse_profile)
         else:
-            profiles = selector.css('#similar_users_list li > a::attr(href), #matchphotobrowser_int .item > a::attr(href)').extract()
+            profiles = selector.css('#similar_users_list li > a::attr(href), #matchphotobrowser_int .item a.name::attr(href)').extract()
             if len(profiles) == 0:
                 log.msg('Credentials incorrect.', level=log.ERROR)
             else:
