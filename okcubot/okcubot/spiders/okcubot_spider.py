@@ -396,6 +396,8 @@ class OkCubotSpider(Spider):
             yield request
 
     # FIXME: ?
+    # The bot tries to answer a question in order to fetch answers from
+    # the target profile.
     def answer_question(self, qid, option):
         return FormRequest("https://www.okcupid.com/questions/ask",
                             formdata={
@@ -422,7 +424,7 @@ class OkCubotSpider(Spider):
                                 'X-Requested-With': 'XMLHttpRequest'
                             })
 
-    # TODO: implement(?)
+    # TODO: Implement
     def answered(self, response):
         # TODO: WE NEED TO GET THEIR ANSWER (hint: target in POST)
         pass
