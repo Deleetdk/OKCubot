@@ -1,5 +1,5 @@
-Twisted
-scrapy
+Twisted==11.0.0
+scrapy==0.24.5
 scrapely
 loginform
 lxml
