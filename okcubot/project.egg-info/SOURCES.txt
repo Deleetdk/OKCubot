@@ -1,0 +1,13 @@
+setup.py
+okcubot/__init__.py
+okcubot/items.py
+okcubot/pipelines.py
+okcubot/settings.py
+okcubot/spiders/__init__.py
+okcubot/spiders/okcubot_spider.old.py
+okcubot/spiders/okcubot_spider.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt

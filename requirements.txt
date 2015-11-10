@@ -1,0 +1,5 @@
+Twisted
+scrapy
+scrapely
+loginform
+lxml
