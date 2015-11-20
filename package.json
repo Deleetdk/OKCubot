@@ -1,0 +1,30 @@
+{
+  "name": "okc",
+  "version": "0.0.0",
+  "description": "scraper for okcupid",
+  "main": "scraper.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deleetdk/okcubot.git"
+  },
+  "keywords": [
+    "scraper",
+    "data",
+    "dataset",
+    "science",
+    "psychology",
+    "cli"
+  ],
+  "author": "onbjerg",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/deleetdk/okcubot/issues"
+  },
+  "homepage": "https://github.com/deleetdk/okcubot#readme",
+  "devDependencies": {
+    "standard": "^5.4.1"
+  }
+}
